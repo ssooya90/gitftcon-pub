@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	  content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+<head>
+	<meta charset="UTF-8">
+	<title>감성스테이</title>
+	<link type="text/css" rel="stylesheet" href="../css/reset.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/datepicker.min.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/swiper.min.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/ui.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/style.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/daterangepicker.min.css"/>
+</head>
+<body>
+<div class="container footer-bigger">
+	<div class="wrapper relative">
+
+		<article class="page__header">
+
+			<div class="page__header__wrap">
+				<a href="#none" class="left-btn">
+					<i class="ic-back"></i>
+				</a>
+
+				<div class="page-tit">날짜</div>
+
+				<a href="javascript:reset()" class="right-btn">
+					<span class="txt">초기화</span>
+				</a>
+			</div>
+
+
+		</article>
+
+		<section class="search__calendar">
+
+			<input id="date-range" type="hidden">
+			<div id="date-range-container"></div>
+
+		</section>
+
+
+	</div>
+
+
+	<article class="page__footer fixed">
+
+		<div class="page__footer__wrap">
+
+			<div class="people__menu">
+
+				<div class="people__select">
+					2020.10.20 ~ 2020.10.25
+				</div>
+
+				<a href="#none" class="apply-btn off">적용</a>
+			</div>
+		</div>
+
+
+	</article>
+
+
+</div>
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/jquery-ui-1.12.1.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/datepicker.min.js"></script>
+<script src="../js/datepicker.ko.js"></script>
+<script src="../js/moment.min.js"></script>
+<script src="../js/jquery.daterangepicker.min.js"></script>
+<script>
+
+
+	$(function () {
+		$('#date-range').dateRangePicker(
+			{
+				inline: true,
+				container: '#date-range-container',
+				alwaysOpen: true,
+				singleMonth: false,
+				language: 'ko',
+				// stickyMonths: 2,
+				startDate: moment().subtract(0, 'months').format('YYYY-MM-DD'),
+			}).bind('datepicker-change', function (event, obj) {
+
+
+				$('.people__menu .apply-btn').removeClass('off');
+
+		});
+	});
+
+
+	function reset(){
+		$('#date-range').data('dateRangePicker').clear();
+		$('.people__menu .apply-btn').addClass('off');
+
+	}
+
+
+</script>
+
+</body>
+</html>

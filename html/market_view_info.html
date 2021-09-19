@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	  content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<head>
+	<meta charset="UTF-8">
+	<title>감성스테이</title>
+	<link type="text/css" rel="stylesheet" href="../css/reset.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/datepicker.min.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/swiper.min.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/ui.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+<div class="container header-none footer-normal">
+	<div class="wrapper relative">
+		<article class="page__header type-white type-info">
+
+			<div class="page__header__wrap">
+				<a href="#none" class="left-btn">
+					<i class="ic-back"></i>
+				</a>
+
+				<div class="right-btn">
+					<a href="javascript:popupOpen('share')" class="share-btn"></a>
+					<a href="#none" class="heart-btn"></a>
+				</div>
+
+			</div>
+		</article>
+
+
+		<section class="item__detail">
+
+
+			<article class="item__detail__img">
+
+				<div class="item__detail__img__wrap swiper-container">
+
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide"><div class="img-box"><img src="../img/group10@3x.jpg" alt="이미지"></div></li>
+						<li class="swiper-slide"><div class="img-box"><img src="../img/group10@3x.jpg" alt="이미지"></div></li>
+						<li class="swiper-slide"><div class="img-box"><img src="../img/group10@3x.jpg" alt="이미지"></div></li>
+						<li class="swiper-slide"><div class="img-box"><img src="../img/group10@3x.jpg" alt="이미지"></div></li>
+						<li class="swiper-slide"><div class="img-box"><img src="../img/group10@3x.jpg" alt="이미지"></div></li>
+						<li class="swiper-slide"><div class="img-box"><img src="../img/group10@3x.jpg" alt="이미지"></div></li>
+						<li class="swiper-slide"><div class="img-box"><img src="../img/group10@3x.jpg" alt="이미지"></div></li>
+						<li class="swiper-slide"><div class="img-box"><img src="../img/group10@3x.jpg" alt="이미지"></div></li>
+						<li class="swiper-slide"><div class="img-box"><img src="../img/group10@3x.jpg" alt="이미지"></div></li>
+						<li class="swiper-slide"><div class="img-box"><img src="../img/group10@3x.jpg" alt="이미지"></div></li>
+					</ul>
+
+					<div class="img__navi__box">
+						<span class="current">1</span>/<span class="max">10</span>
+					</div>
+
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+
+			</article>
+
+			<article class="market__detail__info">
+				<div class="inner">
+					<div class="top-box">
+						<div class="profile-box">
+							<div class="img-box">
+								<img src="../img/group10@3x.jpg" alt="이미지">
+							</div>
+							<div class="txt-box">
+								<div class="top-txt">yeonsoo4227</div>
+								<div class="bottom-txt">스타벅스</div>
+							</div>
+						</div>
+
+						<div class="info-box">
+							<span class="heart-show-txt">30</span>
+						</div>
+					</div>
+
+					<div class="mid-box">
+						<div class="subject-txt">아메리카노</div>
+						<div class="con-txt">
+							냠냠촵촵
+						</div>
+
+					</div>
+
+				</div>
+
+
+			</article>
+
+			<article class="divider"></article>
+
+			<article class="market__reservation__info">
+
+				<div class="inner">
+					<div class="tit-box">
+						<span class="tit-txt">상품 정보</span>
+					</div>
+
+					<div class="market__reservation__info__list">
+
+						<div class="row">
+							<a href="#none" class="place txt">스타벅스</a>
+						</div>
+						<div class="row">
+							<div class="calendar txt">21.10.22 ~ 21.11.25</div>
+						</div>
+
+					</div>
+
+				</div>
+
+
+			</article>
+
+			<article class="divider"></article>
+		</section>
+
+	</div>
+
+	<article class="page__footer fixed">
+
+		<div class="page__footer__wrap">
+
+			<div class="page__footer__info">
+				<div class="select-txt">
+					<div class="price-txt">130,000원</div>
+				</div>
+
+				<a href="#none" class="info-btn">구매하기</a>
+			</div>
+		</div>
+	</article>
+
+
+	<article class="popup popup-share">
+
+		<div class="popup-wrap-bg">
+
+			<div class="popup-wrap">
+
+				<a href="javascript:popupClose('share')" class="close-btn"></a>
+
+				<div class="popup-body">
+
+					<div class="popup-share-group">
+						<div class="tit-box">공유하기</div>
+						<ul>
+							<li><a href="#none" class="facebook"></a></li>
+							<li><a href="#none" class="instagram"></a></li>
+							<li><a href="#none" class="kakao"></a></li>
+							<li><a href="#none" class="url"></a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</article>
+
+
+</div>
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/jquery-ui-1.12.1.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/datepicker.min.js"></script>
+<script src="../js/datepicker.ko.js"></script>
+<script>
+
+
+	var topImgSwiper = new Swiper('.item__detail__img .swiper-container', {
+		loop: true,
+		parallax: true,
+		slideToClickedSlide: true,
+		slidesPerView: '1',
+		cssWidthAndHeight: true,
+
+		navigation: { // 네비게이션 설정
+			nextEl: '.swiper-button-next', // 다음 버튼 클래스명
+			prevEl: '.swiper-button-prev', // 이번 버튼 클래스명
+		},
+	});
+
+
+	topImgSwiper.on('slideChange', function (e) {
+		var _order = topImgSwiper.realIndex;
+		$('.item__detail__img .img__navi__box .current').text(_order+1);
+	});
+
+	$('.review__tabs a').on('click',function (){
+
+		$('.review__tabs li').removeClass('active');
+		$(this).parent().addClass('active');
+	})
+
+
+
+</script>
+
+</body>
+</html>

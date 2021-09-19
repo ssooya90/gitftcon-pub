@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	  content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<head>
+	<meta charset="UTF-8">
+	<title>감성스테이</title>
+	<link type="text/css" rel="stylesheet" href="../css/reset.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/datepicker.min.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/swiper.min.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/ui.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+<div class="container footer-none">
+	<div class="wrapper relative">
+
+		<article class="page__header">
+
+			<div class="page__header__wrap">
+				<a href="#none" class="left-btn">
+					<i class="ic-back"></i>
+				</a>
+
+				<div class="page-tit">판매하기</div>
+			</div>
+		</article>
+
+
+
+		<section class="market__sold">
+
+			<div class="inner">
+
+				<div class="sold__form">
+
+					<div class="row">
+						<a href="#none" class="search-btn-box">
+							<i class="ic ic-calendar"></i>
+							<span class="txt">2020.10.20 ~ 2020.10.25, 1박</span>
+						</a>
+					</div>
+
+					<div class="row">
+						<a href="#none" class="search-btn-box">
+							<span class="txt" style="margin-left: 0;padding-left: 0;">카테고리 선택</span>
+						</a>
+					</div>
+
+					<div class="row">
+						<div class="input-box">
+							<input type="text" class="calender" placeholder="브랜드명">
+							<a href="#none" class="reset-btn"></a>
+						</div>
+					</div>
+
+
+
+					<div class="row">
+						<div class="input-box">
+							<input type="text" class="price" placeholder="가격을 입력해주세요.">
+							<a href="#none" class="reset-btn"></a>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="textarea-box">
+							<div class="top-box">
+								<textarea class="subject" placeholder="상품명" onkeydown="resize(this)" onkeyup="resize(this)"></textarea>
+							</div>
+							<div class="bottom-box">
+								<textarea class="content" placeholder="상품설명"></textarea>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<a href="#none" class="img-upload-btn">
+							<i class="ic ic-photo"></i>
+							<span class="txt">사진 첨부하기</span>
+						</a>
+					</div>
+
+					<div class="row">
+						<div class="reg-btn-box">
+							<a href="#none" class="reg-btn">완료</a>
+						</div>
+					</div>
+				</div>
+
+
+
+
+
+			</div>
+
+		</section>
+	</div>
+
+
+
+
+</div>
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/jquery-ui-1.12.1.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/datepicker.min.js"></script>
+<script src="../js/datepicker.ko.js"></script>
+<script>
+
+	$('.filter__form a').on('click',function (){
+		$(this).toggleClass('on');
+	});
+
+
+	function resize(obj) {
+		obj.style.height = "1px";
+		obj.style.height = (obj.scrollHeight)+"px";
+	}
+
+</script>
+
+</body>
+</html>

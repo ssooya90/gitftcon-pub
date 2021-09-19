@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	  content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<head>
+	<meta charset="UTF-8">
+	<title>감성스테이</title>
+	<link type="text/css" rel="stylesheet" href="../css/reset.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/datepicker.min.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/swiper.min.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/ui.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+<div class="container">
+	<div class="wrapper">
+
+
+		<article class="page__header">
+
+			<div class="page__header__wrap">
+				<a href="#none" class="left-btn">
+					<i class="ic-back"></i>
+				</a>
+				<div class="page-tit">이벤트</div>
+			</div>
+		</article>
+
+		<section class="">
+
+
+			<article class="board__list__form">
+
+				<div class="inner">
+
+					<div class="list__wrap">
+						<ul>
+							<li>
+								<a href="#none" class="tit-box">
+									<div class="top-txt">오픈 이벤트</div>
+									<div class="bottom-txt">2020.12.25</div>
+								</a>
+								<div class="con-box">
+									<div class="img-box">
+										<img src="../img/group10@2x.jpg">
+									</div>
+									<div class="txt-box">
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<a href="#none" class="tit-box active">
+									<div class="top-txt">오픈 이벤트</div>
+									<div class="bottom-txt">2020.12.25</div>
+								</a>
+								<div class="con-box" style="display: block;">
+									<div class="event-box"></div>
+									<div class="txt-box">
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+										안녕하세요.
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+			</article>
+
+
+		</section>
+
+
+	</div>
+
+	<footer class="">
+		<div class="footer__wrap">
+			<div class="footer__con">
+				<ul class="menu__list">
+					<li class=""><a href="#none"><span class="txt">홈</span></a></li>
+					<li><a href="#none"><span class="txt">마켓</span></a></li>
+					<li class=""><a href="#none"><span class="txt">리뷰쓰기</span></a></li>
+					<li class=""><a href="#none"><span class="txt">메세지</span></a></li>
+					<li class="on"><a href="#none"><span class="txt">MY</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+
+</div>
+
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/jquery-ui-1.12.1.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/datepicker.min.js"></script>
+<script src="../js/datepicker.ko.js"></script>
+<script>
+	$('.board__list__form a').on('click', function () {
+
+		if($(this).hasClass('active')){
+			$(this).removeClass('active');
+			$(this).parents('li').find('.con-box').stop().slideUp();
+
+		}else{
+			$(this).addClass('active');
+			$(this).parents('li').find('.con-box').stop().slideDown();
+		}
+	});
+
+
+</script>
+
+</body>
+</html>
